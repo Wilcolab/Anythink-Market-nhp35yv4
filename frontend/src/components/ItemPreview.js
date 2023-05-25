@@ -28,7 +28,7 @@ const ItemPreview = (props) => {
       props.favorite(item.slug);
     }
   };
-  placeHolderImgPath="/workspaces/Anythink-Market-nhp35yv4/frontend/public/placeholder.png"
+  const placeHolderImgPath="/workspaces/Anythink-Market-nhp35yv4/frontend/public/placeholder.png"
   const imgSrc = item.img ? item.img : placeHolderImgPath;
 
   return (
