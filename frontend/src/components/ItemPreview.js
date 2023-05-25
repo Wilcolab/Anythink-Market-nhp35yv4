@@ -28,6 +28,8 @@ const ItemPreview = (props) => {
       props.favorite(item.slug);
     }
   };
+  placeHolderImgPath="/workspaces/Anythink-Market-nhp35yv4/frontend/public/placeholder.png"
+  const imgSrc = item.img ? item.img : placeHolderImgPath;
 
   return (
     <div
@@ -37,7 +39,7 @@ const ItemPreview = (props) => {
     >
       <img
         alt="item"
-        src={item.image}
+        src={imgSrc}
         className="card-img-top item-img"
         style={{ borderRadius: "20px" }}
       />
